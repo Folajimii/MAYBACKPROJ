@@ -30,13 +30,12 @@ export default function UpdateProfile() {
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
   };
-  console.log("imgpic", imgPic);
+
   useEffect(() => {
     if (imgPic !== "") {
       const handleImgUpload = async () => {
         try {
           const upload = await uploadToCloudinary(imgPic);
-          console.log("cloud", upload);
           const updatedProfileImg = upload.data.secure_url;
           setImgLink(updatedProfileImg);
         } catch (error) {

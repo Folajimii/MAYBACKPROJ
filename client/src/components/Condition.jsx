@@ -5,7 +5,6 @@ import useScroll from "../hooks/scroll";
 
 export default function Condition({ data }) {
   const { scroll, scrollRef } = useScroll();
-  console.log("condition", data);
   const flattenDataArray = data.flatMap((item) => item);
   console.log(flattenDataArray);
   const filterByNew = flattenDataArray.filter(

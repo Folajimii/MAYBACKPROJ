@@ -17,7 +17,7 @@ export default function OrderId() {
     orderId,
     currentUser?.access_token
   );
-  console.log("orderId", data);
+ 
 
   useEffect(() => {
     document.title = `Your order ${data?._id} `;

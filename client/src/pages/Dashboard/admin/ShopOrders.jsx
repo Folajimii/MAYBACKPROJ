@@ -30,7 +30,7 @@ export default function ShopOrders() {
       );
       setData([res.data, ...data.filter((order) => order._id !== id)]);
     } catch (error) {
-      console.log();
+      console.log(error);
       toast.error("Error updating this order request");
     }
   };
@@ -103,7 +103,7 @@ export default function ShopOrders() {
                     <td>
                       <Button
                         variant={order.isDelivered ? "success" : "warning"}
-                        className="rounded-4  fw-bold"
+                        className="rounded-4  fw-bold w-100"
                         onClick={() => handleOrderUpdate(order._id)}
                         disabled={order.isDelivered === true}
                       >

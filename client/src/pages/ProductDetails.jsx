@@ -30,7 +30,7 @@ export default function ProductDetails() {
   const suggestedProducts = data.filter(
     (product) => product.category !== state?.product?.category
   );
-  console.log("filter", suggestedProducts);
+
 
   const addToCart = (item) => {
     increaseCartQty(item);

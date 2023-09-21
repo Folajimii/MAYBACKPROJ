@@ -12,7 +12,7 @@ export default function Categories() {
     getProductsByCategory,
     collectionName
   );
-  console.log("get", data);
+ 
   useEffect(()=> {
     document.title = collectionName
   }, [collectionName])

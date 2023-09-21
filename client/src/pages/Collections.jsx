@@ -10,7 +10,7 @@ export default function Collections() {
   const { data, error, loading } = useFetchData(getCategories);
   const location = useLocation();
   console.log(location);
-  console.log("collections", data);
+  
   useEffect(() => {
     document.title = "Collections";
   }, []);

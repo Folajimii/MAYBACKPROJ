@@ -260,7 +260,7 @@ export default function CreateProduct() {
 
   const onSubmitHandler = async (data) => {
     setLoading(true);
-    console.log("sub", data);
+   
     let productImgs = [];
     try {
       for (let i = 0; i < data.productpics.length; i++) {

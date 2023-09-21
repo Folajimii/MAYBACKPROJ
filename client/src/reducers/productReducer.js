@@ -5,7 +5,7 @@ export const initialState = {
 };
 
 export const productReducer = (state, action) => {
-    console.log('product dispatch', action);
+  
   switch (action.type) {
     case "PRODUCT_REQUEST":
       return {
